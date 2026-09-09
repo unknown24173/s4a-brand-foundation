@@ -10,33 +10,180 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as BookRepairRouteImport } from './routes/book-repair'
+import { Route as ConsultRouteImport } from './routes/consult'
+import { Route as ConsultingDiyPolicyRouteImport } from './routes/consulting-diy-policy'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as GalleryRouteImport } from './routes/gallery'
+import { Route as ItSiwesRouteImport } from './routes/it-siwes'
+import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as RefundCancellationRouteImport } from './routes/refund-cancellation'
+import { Route as ServicesRouteImport } from './routes/services'
+import { Route as TermsRouteImport } from './routes/terms'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BookRepairRoute = BookRepairRouteImport.update({
+  id: '/book-repair',
+  path: '/book-repair',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ConsultRoute = ConsultRouteImport.update({
+  id: '/consult',
+  path: '/consult',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ConsultingDiyPolicyRoute = ConsultingDiyPolicyRouteImport.update({
+  id: '/consulting-diy-policy',
+  path: '/consulting-diy-policy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GalleryRoute = GalleryRouteImport.update({
+  id: '/gallery',
+  path: '/gallery',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ItSiwesRoute = ItSiwesRouteImport.update({
+  id: '/it-siwes',
+  path: '/it-siwes',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RefundCancellationRoute = RefundCancellationRouteImport.update({
+  id: '/refund-cancellation',
+  path: '/refund-cancellation',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesRoute = ServicesRouteImport.update({
+  id: '/services',
+  path: '/services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/book-repair': typeof BookRepairRoute
+  '/consult': typeof ConsultRoute
+  '/consulting-diy-policy': typeof ConsultingDiyPolicyRoute
+  '/contact': typeof ContactRoute
+  '/gallery': typeof GalleryRoute
+  '/it-siwes': typeof ItSiwesRoute
+  '/privacy': typeof PrivacyRoute
+  '/refund-cancellation': typeof RefundCancellationRoute
+  '/services': typeof ServicesRoute
+  '/terms': typeof TermsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/book-repair': typeof BookRepairRoute
+  '/consult': typeof ConsultRoute
+  '/consulting-diy-policy': typeof ConsultingDiyPolicyRoute
+  '/contact': typeof ContactRoute
+  '/gallery': typeof GalleryRoute
+  '/it-siwes': typeof ItSiwesRoute
+  '/privacy': typeof PrivacyRoute
+  '/refund-cancellation': typeof RefundCancellationRoute
+  '/services': typeof ServicesRoute
+  '/terms': typeof TermsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/book-repair': typeof BookRepairRoute
+  '/consult': typeof ConsultRoute
+  '/consulting-diy-policy': typeof ConsultingDiyPolicyRoute
+  '/contact': typeof ContactRoute
+  '/gallery': typeof GalleryRoute
+  '/it-siwes': typeof ItSiwesRoute
+  '/privacy': typeof PrivacyRoute
+  '/refund-cancellation': typeof RefundCancellationRoute
+  '/services': typeof ServicesRoute
+  '/terms': typeof TermsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/book-repair'
+    | '/consult'
+    | '/consulting-diy-policy'
+    | '/contact'
+    | '/gallery'
+    | '/it-siwes'
+    | '/privacy'
+    | '/refund-cancellation'
+    | '/services'
+    | '/terms'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/book-repair'
+    | '/consult'
+    | '/consulting-diy-policy'
+    | '/contact'
+    | '/gallery'
+    | '/it-siwes'
+    | '/privacy'
+    | '/refund-cancellation'
+    | '/services'
+    | '/terms'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/book-repair'
+    | '/consult'
+    | '/consulting-diy-policy'
+    | '/contact'
+    | '/gallery'
+    | '/it-siwes'
+    | '/privacy'
+    | '/refund-cancellation'
+    | '/services'
+    | '/terms'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  BookRepairRoute: typeof BookRepairRoute
+  ConsultRoute: typeof ConsultRoute
+  ConsultingDiyPolicyRoute: typeof ConsultingDiyPolicyRoute
+  ContactRoute: typeof ContactRoute
+  GalleryRoute: typeof GalleryRoute
+  ItSiwesRoute: typeof ItSiwesRoute
+  PrivacyRoute: typeof PrivacyRoute
+  RefundCancellationRoute: typeof RefundCancellationRoute
+  ServicesRoute: typeof ServicesRoute
+  TermsRoute: typeof TermsRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +195,99 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/book-repair': {
+      id: '/book-repair'
+      path: '/book-repair'
+      fullPath: '/book-repair'
+      preLoaderRoute: typeof BookRepairRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/consult': {
+      id: '/consult'
+      path: '/consult'
+      fullPath: '/consult'
+      preLoaderRoute: typeof ConsultRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/consulting-diy-policy': {
+      id: '/consulting-diy-policy'
+      path: '/consulting-diy-policy'
+      fullPath: '/consulting-diy-policy'
+      preLoaderRoute: typeof ConsultingDiyPolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gallery': {
+      id: '/gallery'
+      path: '/gallery'
+      fullPath: '/gallery'
+      preLoaderRoute: typeof GalleryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/it-siwes': {
+      id: '/it-siwes'
+      path: '/it-siwes'
+      fullPath: '/it-siwes'
+      preLoaderRoute: typeof ItSiwesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/refund-cancellation': {
+      id: '/refund-cancellation'
+      path: '/refund-cancellation'
+      fullPath: '/refund-cancellation'
+      preLoaderRoute: typeof RefundCancellationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services': {
+      id: '/services'
+      path: '/services'
+      fullPath: '/services'
+      preLoaderRoute: typeof ServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  BookRepairRoute: BookRepairRoute,
+  ConsultRoute: ConsultRoute,
+  ConsultingDiyPolicyRoute: ConsultingDiyPolicyRoute,
+  ContactRoute: ContactRoute,
+  GalleryRoute: GalleryRoute,
+  ItSiwesRoute: ItSiwesRoute,
+  PrivacyRoute: PrivacyRoute,
+  RefundCancellationRoute: RefundCancellationRoute,
+  ServicesRoute: ServicesRoute,
+  TermsRoute: TermsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
