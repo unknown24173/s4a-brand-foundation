@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { PageShell } from "@/components/page-shell";
+export const Route = createFileRoute("/consult")({ head: () => ({ meta: [{ title: "S4A Consult" }, { name: "description", content: "S4A Consult — Smarter Maintenance. Better Decisions." }, { property: "og:title", content: "S4A Consult" }, { property: "og:description", content: "Smarter Maintenance. Better Decisions." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: () => <PageShell eyebrow="S4A Consult" title="Smarter Maintenance. Better Decisions." description="A dedicated foundation for practical automotive consultation and informed maintenance choices." consult /> });

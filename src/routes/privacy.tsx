@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { PageShell } from "@/components/page-shell";
+export const Route = createFileRoute("/privacy")({ head: () => ({ meta: [{ title: "Privacy Policy — S4A" }, { name: "description", content: "Privacy policy foundation for S4A Auto Repair & Maintenance Services." }, { property: "og:title", content: "Privacy Policy — S4A" }, { property: "og:description", content: "S4A privacy policy destination." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: () => <PageShell eyebrow="Policy" title="Privacy Policy" description="This policy destination is established for approved legal content in a later phase." /> });
