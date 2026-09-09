@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { PageShell } from "@/components/page-shell";
+export const Route = createFileRoute("/about")({ head: () => ({ meta: [{ title: "About S4A Auto Repair" }, { name: "description", content: "Learn about S4A Auto Repair & Maintenance Services." }, { property: "og:title", content: "About S4A Auto Repair" }, { property: "og:description", content: "Driven by Trust. Powered by Excellence." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: () => <PageShell eyebrow="About S4A" title="Trust, built into every detail." description="The foundation for the S4A story, values, and approach to automotive service." /> });

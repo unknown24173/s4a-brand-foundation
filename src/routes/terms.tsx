@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { PageShell } from "@/components/page-shell";
+export const Route = createFileRoute("/terms")({ head: () => ({ meta: [{ title: "Terms of Use — S4A" }, { name: "description", content: "Terms of use foundation for S4A Auto Repair & Maintenance Services." }, { property: "og:title", content: "Terms of Use — S4A" }, { property: "og:description", content: "S4A terms of use destination." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: () => <PageShell eyebrow="Policy" title="Terms of Use" description="This policy destination is established for approved legal content in a later phase." /> });
